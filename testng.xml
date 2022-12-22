@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" parallel="tests" thread-count="1" group-by-instances="true">
+    <test name="Test">
+        <classes>
+            <class name="CalulatorTests">
+                <methods>
+                    <include name="AddNumbers"/>
+                    <include name="SubNumbers"/>
+                    <include name="MulNumbers"/>
+                    <include name="DivNumbers"/>
+                    <include name="ValidateInfinity"/>
+                    <include name="ValidateErrors"/>
+                    <include name="ValidateCalculation"/>
+                    <include name="ValidateButtons"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
